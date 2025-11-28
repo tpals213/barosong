@@ -1,10 +1,10 @@
 // src/components/Footer.jsx
 import React from "react";
-import kakaoIcon from "../../assets/image/kakao.svg"; // 실제 아이콘 이미지 경로로 변경
+import kakaoIcon from "../../assets/image/kakao.svg";
 
 const Footer = () => {
   return (
-    <footer id="barosong-footer"  className="w-full bg-[#120d13] text-[#e4dde9]">
+    <footer id="barosong-footer" className="w-full bg-[#120d13] text-[#e4dde9]">
       <div className="max-w-[1440px] mx-auto flex flex-col items-center py-[80px]">
         {/* 상단 타이틀 */}
         <div className="text-[28px] font-semibold tracking-[-0.02em] mb-[40px]">
@@ -25,13 +25,19 @@ const Footer = () => {
 
         {/* 카카오톡 아이콘 (원 안에) */}
         <div className="mb-[60px]">
-          <div className="w-[80px] h-[80px] rounded-full bg-[#ffd900] flex items-center justify-center shadow-md">
-            <img
-              src={kakaoIcon}
-              alt="카카오톡 상담"
-              className="w-[40px] h-[40px] object-contain"
-            />
-          </div>
+          <a
+            href="https://pf.kakao.com/_xlfxmuT"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="w-[80px] h-[80px] rounded-full bg-[#ffd900] flex items-center justify-center shadow-md cursor-pointer">
+              <img
+                src={kakaoIcon}
+                alt="카카오톡 상담"
+                className="w-[40px] h-[40px] object-contain"
+              />
+            </div>
+          </a>
         </div>
 
         {/* 하단 주소 + 이메일 */}
